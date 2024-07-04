@@ -4,15 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: "img1 img1 img2"
+                                  "img1 img1 img3"
+                                  "img4 img5 img6";
+            width: 60%;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            border: 2px solid white;
+        }
+        .i1{
+            grid-area: img1;
+        }
+        .i2{
+            grid-area: img2;
+        }
+
+        .i3{
+            grid-area: img3;
+        }
+
+        .i4{
+            grid-area: img4;
+        }
+
+        .i5{
+            grid-area: img5;
+        }
+
+        .i6{
+            grid-area: img6;
+        }
+
+
+
+    </style>
 </head>
 <body>
     <div class="container">
-        <img src="./assets/th (2).jpg" alt="">
-        <img src="./assets/high-resolution-nature-landscape-vast-xl.jpg" alt="">
-        <img src="./assets/Nature-wallpapers-Full-HD-backgroud.jpg" alt="">
-        <img src="./assets/th (1).jpg" alt="">
-        <img src="./assets/th (1).jpg" alt="">
-        <img src="./assets/th.jpg" alt="">
+        <img src="./assets/landscape_photography_tips.jpg" alt="" class="i1">
+        <img src="./assets/high-resolution-nature-landscape-vast-xl.jpg" alt="" class="i2">
+        <img src="./assets/Nature-wallpapers-Full-HD-backgroud.jpg" alt="" class="i3">
+        <img src="./assets/th (1).jpg" alt="" class="i4">
+        <img src="./assets/125572.jpg" alt="" class="i5">
+        <img src="./assets/th.jpg" alt="" class="i6">
 
     </div>
 </body>
